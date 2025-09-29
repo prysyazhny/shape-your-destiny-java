@@ -45,4 +45,28 @@ class AppTest {
     assertEquals(2 * 4 + 4 * Math.sqrt(2), t.getPerimeter());
   }
 
+  @Test
+  void testRectanglePolygon() {
+    Polygon r = new Rectangle(4, 6);
+    assertEquals(4, r.numberOfSides());
+  }
+
+  @Test
+  void testSquarePolygon() {
+    Polygon s = new Square(5);
+    assertEquals(4, s.numberOfSides());
+  }
+
+  @Test
+  void testRightTrianglePolygon() {
+    Polygon t = new RightTriangle(3, 4);
+    assertEquals(3, t.numberOfSides());
+  }
+
+  @Test
+  void testIsoscelesRightTrianglePolygon() {
+    Polygon t = new IsoscelesRightTriangle(3);
+    assertEquals(3, t.numberOfSides());
+  }
+
 }
