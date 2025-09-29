@@ -31,5 +31,18 @@ class AppTest {
     assertEquals(12, t.getPerimeter());
   }
 
+  @Test
+  void testSquare() {
+    Square s = new Square(5);
+    assertEquals(25, s.getArea());
+    assertEquals(20, s.getPerimeter());
+  }
+
+  @Test
+  void testIsoscelesRightTriangle() {
+    IsoscelesRightTriangle t = new IsoscelesRightTriangle(4); 
+    assertEquals(8, t.getArea());             
+    assertEquals(2 * 4 + 4 * Math.sqrt(2), t.getPerimeter());
+  }
 
 }

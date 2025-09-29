@@ -23,5 +23,17 @@ public class App {
 
     System.out.println("\n");
 
+    Square s = new Square(5);
+    System.out.println("Square Area: " + s.getArea());
+    System.out.println("Square Perimeter: " + s.getPerimeter());
+
+    System.out.println("\n");
+
+    IsoscelesRightTriangle it = new IsoscelesRightTriangle(4);
+    System.out.println("Isosceles Right Triangle Area: " + it.getArea());
+    System.out.println("Isosceles Right Triangle Perimeter: " + it.getPerimeter());
+
+    System.out.println("\n");
+
   }
 }
